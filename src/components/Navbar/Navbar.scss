@@ -1,0 +1,24 @@
+
+.navbar_circle {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-left: 30px; 
+    padding-bottom: 50px;
+    // background-color: $color-blueP;
+    width: 100%;
+    position: fixed; /* Restez à fixed */
+    z-index: 2; /* Augmentez la valeur z-index */
+    top: 40px; /* Ajoutez pour rester en haut */
+}
+a[href^="#"]:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewport="0 0 30 30" style="fill:green;"><circle cx="15" cy="15" r="15"/></svg>') 16 16, auto;
+}
+  
+@media (max-width:1236px) {
+ .navbar_circle {
+    justify-content: center;
+      top: 180px;
+
+  }
+}

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import './stlyes/utils/variables.scss';
+
+@import './stlyes/base/base.scss';
+
+@import './pages/home.scss';
+@import './components/Navbar/link.scss';
+@import './components/Navbar/Navbar.scss';
+@import './components/Header/header.scss';
+@import './components/Apropos/Apropos.scss';
+@import './components/Accroche/accroche.scss';
+@import './components/Skills/Skills.scss';
+@import './components/Skills/CircleCard.scss';
+@import './components/Project/Project.scss';
+@import './components/Project/Projectboostrap.scss';
+@import './components/Contact/contact.scss'
+

@@ -1,0 +1,41 @@
+
+[
+    {
+        "id": 1,
+        "image": "iconeslogiciels/logogithub.svg",
+        "titre": "GITHUB",
+        "details":"GITHUB, système cloud de contrôle de version"
+    },
+    {
+        "id": 2,
+        "image": "iconeslogiciels/logogit.svg",
+        "titre": "GIT",
+        "details":"GIT, système de contrôle de version"
+    },
+    {
+        "id": 3,
+        "image": "iconeslogiciels/logonotion.svg",
+        "titre": "NOTION",
+        "details":"NOTION, application de productivité collaborative, d’organisation et de prises de notes"
+    },
+    {
+        "id": 4,
+        "image": "iconeslogiciels/logoswagger.svg",
+        "titre": "SWAGGER",
+        "details":"SWAGGER, ensemble d'outils qui décrrit la structure des APIs. "
+    },
+    {
+        "id": 5,
+        "image": "iconeslogiciels/logovsc.svg",
+        "titre": "VSCODE",
+        "details":"VSCODE, éditeur de code"
+    },
+    {
+        "id": 6,
+        "image": "iconeslogiciels/logofeedly.svg",
+        "titre": "FEEDLY",
+         "details":"FEEDLY, outil de veille et de curation"
+    }
+    
+    
+]

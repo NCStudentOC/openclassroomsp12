@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "image": "iconeslangages/logohtml.svg",
+        "titre": "HTML",
+        "details":"Le HTML, langage de balisage qui structure le contenu d'une page web."
+    },
+    {
+        "id": 2,
+        "image":"iconeslangages/logocss.svg",
+        "titre": "CSS",   
+         "details":"Le CSS, utilisé pour styliser les éléments HTML."
+        },
+    {
+        "id": 3,
+        "image": "iconeslangages/logosass.svg",
+        "titre": "SASS",
+         "details":"le SASS, préprocesseur qui ajoute des fonctionnalités avancées au CSS."
+    },
+    {
+        "id": 4,
+        "image": "iconeslangages/logojs.svg",
+        "titre": "JAVASCRIPT",
+        "details":"le JavaScript, langage de programmation pour ajouter de l'interactivité aux sites web."
+    },
+    {
+        "id": 5,
+        "image": "iconeslangages/logonode.svg",
+        "titre": "NODEJS",
+        "details":"Node.js, environnement d'exécution JavaScript côté serveur."
+
+    },
+    {
+        "id": 6,
+        "image": "iconeslangages/logoreact.svg",
+        "titre": "REACT",
+        "details":"React est une bibliothèque JavaScript utilisée pour créer des interfaces utilisateur interactives."
+    },
+    {
+        "id": 7,
+        "image": "iconeslangages/logoredux.svg",
+        "titre": "REDUX",
+        "details":"Redux est une bibliothèque utilisée pour gérer l'état de l'application."
+    }
+    ,
+    {
+        "id": 8,
+        "image": "iconeslangages/logomongo.svg",
+        "titre": "MONGODB",
+        "details":"MongoDB est un système de gestion de base de données orienté documents."
+    }
+    
+    
+]

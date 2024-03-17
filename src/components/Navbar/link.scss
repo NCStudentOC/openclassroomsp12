@@ -1,0 +1,58 @@
+@import '../../stlyes/mixins/hover-effect.scss';
+
+
+.circle-link {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0px 10px 15px rgba(89, 87, 87, 0.991); /* Ajoute une ombre */
+    text-decoration: none;
+    transition: width 0.3s ease, height 0.3s ease; 
+    @include hover-effect;
+    
+     &.active {
+        transform: scale(1.8);
+        transition: transform 0.3s ease;
+        background-color: aliceblue;
+    }
+}
+.circle-link:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:blue;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
+}
+.adapt{
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 82px;
+    width: 84px;
+
+      &.active {
+        color: black;
+      }
+}
+
+
+
+
+@media (max-width: 1236px) {
+  .navbar {
+
+    padding-bottom: 0px;
+  }
+  .circle-link {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    // margin: 2%; // Ajouter une marge pour créer de l'espace entre les cercles
+  }
+  .adapt{
+     font-size: 12px;
+    line-height: 60px;
+    
+}
+}
+

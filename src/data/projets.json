@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "image": "imagesprojets/p3-booki.png",
+        "imagedesktop" :"imagesprojets/Desktopbooki.webp",
+        "title": "Booki",
+        "text":"HTML / CSS",
+        "link1":"https://github.com/NCStudentOC/OpenclassroomsP3.git",
+        "link2":"https://ncstudentoc.github.io/OpenclassroomsP3/",
+        "textflip":"Création de la page d'accueil d'une agence de voyage et intégration de l'interface en responsive. "
+    },
+    {
+        "id": 2,
+        "image": "imagesprojets/p4-ohmyfood.png",
+        "imagedesktop" :"imagesprojets/Desktopomf.webp",
+        "title": "Ohmyfood",
+        "text":"HTML / CSS / SASS",
+        "link1":"https://github.com/NCStudentOC/OpenclassRoomsP4.git",
+        "link2":"https://ncstudentoc.github.io/OpenclassRoomsP4/",
+        "textflip":"Amélioration de l'interface d'un site mobile avec des animations CSS, et intégration de la maquette en mobil-first. "
+    },
+    {
+        "id": 3,
+        "image": "imagesprojets/p5-printit.png",
+        "imagedesktop" :"imagesprojets/DesktopPrintit.webp",
+        "title": "Print it!",
+        "text":"Javascript",
+        "link1":"https://github.com/NCStudentOC/OpenClassRoomsP5.git",
+        "link2":"https://ncstudentoc.github.io/OpenClassRoomsP5/",
+        "textflip":"Premiers pas sur le langage JavaScript, implémentation d'un carrousel interactif."
+    },
+    {
+         "id": 4,
+        "image": "imagesprojets/p6-sophiebluel.png",
+        "imagedesktop" :"imagesprojets/DesktopSophieBluel.webp",
+        "title": "Sophie Bluel Portfolio!",
+        "text":"Javascript",
+        "link1":"https://github.com/NCStudentOC/OpenClassRoomsProjet6.git",
+        "link2":"https://ncstudentoc.github.io/openclassroomsp6/",
+        "textflip":"Création d'une page web dynamique avec JavaScript, manipulation du DOM et communication Api",
+        "buttonText": "Site hors Backend"
+    },
+    {
+        "id": 5,
+        "image": "imagesprojets/p8-kasa.png",
+        "imagedesktop" :"imagesprojets/Desktopkasa.webp",
+        "title": "Kasa",
+        "text":"Sass / React",
+        "link1":"https://github.com/NCStudentOC/OpenClassRoomsP8.git",
+        "link2":"https://ncstudentoc.github.io/p8openclassrooms/",
+        "textflip":"Création d'une application web de location immobilière avec des composants React et mise en place de  React Router pour créer une expérience utilisateur moderne et réactive."
+    },
+    {
+        "id": 6,
+        "image": "imagesprojets/p9-ninacarducci.png",
+         "imagedesktop" :"imagesprojets/DesktopNinaCarducci.webp",
+        "title": "Nina Carducci",
+        "text":"SEO",
+        "link1":"https://github.com/NCStudentOC/OpenClassRoomsProjet9.git",
+        "link2":"https://ncstudentoc.github.io/OpenClassRoomsProjet9/",
+        "textflip":"Optimisation du référencement d'un site de photographe après audit par Lighthouse, amélioration la vitesse de chargement, la structure du code"
+    },
+    {
+         "id": 7,
+        "image": "imagesprojets/p12-argentbank.png",
+         "imagedesktop" :"imagesprojets/DesktopArgentbank.webp",
+        "title": "Argentbank",
+        "text":"React /Redux toolkit",
+        "link1":"https://github.com/NCStudentOC/OpenclassroomsP11.git",
+        "link2":"",
+        "textflip":"Implémentation du front-end d'une application bancaire avec React, Redux toolkit, intégration du front-end avec le back-end via des appels API.",
+        "buttonText": "Site hors Backend"
+    }
+     
+    
+]
