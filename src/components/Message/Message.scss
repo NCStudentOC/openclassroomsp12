@@ -1,4 +1,7 @@
 .message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -7,7 +10,6 @@
     color: white;
     width: 200px; /* Ajustez cette valeur */
     height: 200px; /* Doit être la même que la largeur */
-    line-height: 50px; /* Centrer le texte verticalement */
     text-align: center; /* Centrer le texte horizontalement */
     white-space: wrap; /* Empêche le texte de passer à la ligne suivante */
     border-radius: 50%;
