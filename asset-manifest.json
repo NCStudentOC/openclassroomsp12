@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/openclassroomsp12/static/css/main.bd684006.css",
+    "main.js": "/openclassroomsp12/static/js/main.792cdef3.js",
+    "static/media/photoabout.webp": "/openclassroomsp12/static/media/photoabout.5c1638022a9555ed562e.webp",
+    "static/media/fond.webp": "/openclassroomsp12/static/media/fond.c95878aac9d0946c85b7.webp",
+    "static/media/logosvg2.svg": "/openclassroomsp12/static/media/logosvg2.cca01001e0d1526782ae.svg",
+    "static/media/logosvg.svg": "/openclassroomsp12/static/media/logosvg.1bdadade9e118aad5b5bc195fb0a1b3a.svg",
+    "index.html": "/openclassroomsp12/index.html",
+    "static/media/loupe.svg": "/openclassroomsp12/static/media/loupe.84a405bf1405dacb99d8b6a6b08b8e15.svg",
+    "main.bd684006.css.map": "/openclassroomsp12/static/css/main.bd684006.css.map",
+    "main.792cdef3.js.map": "/openclassroomsp12/static/js/main.792cdef3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd684006.css",
+    "static/js/main.792cdef3.js"
+  ]
+}
