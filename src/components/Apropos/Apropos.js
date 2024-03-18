@@ -13,11 +13,12 @@ export default function Apropos() {
                         <span className=" loader_one "></span>
                     </div>
                 </>
+
+                <div className="image-wrapper">
+                    <img src={Photo} alt="photo de ligne de code" className='Photo_About'></img>
+                    <div className="circle">  &lt;/&gt;</div>
+                </div>
                 <p className='p_about'>
-                    <div className="image-wrapper">
-                        <img src={Photo} alt="photo de ligne de code" className='Photo_About'></img>
-                        <div className="circle">  &lt;/&gt;</div>
-                    </div>
                     Infographiste indépendant depuis 2001, voulant me lancer un nouveau défit professionnel, je me suis reconverti en tant que Développeur Frontend.<br /><br />
 
                     J’ai suivi la formation certifiante : Intégrateur Web niveau Bac +2 d’Openclassrooms durant laquelle j’ai appris et acquis de solides compétences en HTML, CSS, Javascript et React.<br /><br />
