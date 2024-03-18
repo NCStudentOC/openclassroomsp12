@@ -6,7 +6,7 @@
   margin-top: 10px;
   left: -20px;
   border-radius: 50%;
-  color: #fff;
+  color:$white;
   background: currentColor;
   box-shadow: 32px 0 , -32px 0 ,  64px 0;
 }
@@ -20,7 +20,7 @@
   height: 16px;
   border-radius: 10px;
   background:#FF3D00;
-  animation: move 3s linear infinite alternate;
+  animation: move 4s linear infinite alternate;
 }
 
 @keyframes move {

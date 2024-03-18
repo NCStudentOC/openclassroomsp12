@@ -1,6 +1,8 @@
 @import '../../stlyes/mixins/loader_about.scss';
 @import '../../stlyes/mixins/loader_about.scss';
-@import '../../stlyes/utils/variables.scss';
+@import '../../stlyes/mixins/scrolling.scss';
+@import  '../../stlyes/utils/variables.scss';
+
 #point_skills{
   display: flex;
 z-index: 7;};
@@ -16,15 +18,22 @@ z-index: 7;};
   justify-content: center;
    padding-bottom: 70px;
     box-shadow: 0px 10px 15px rgba(89, 87, 87, 0.991); /* Ajoute une ombre */
-
+padding-top: 20px;
 }
+
 
 .h1_title {
   text-align: center;
   color: $white;
   position: relative;
   margin-top: 250px;
+   @include scrolling;
+  @include fade;
+  animation: scrolling 10s linear infinite, fade 10s linear infinite;
+
 }
+
+
 
 .h2_title {
   text-align:left;
@@ -48,12 +57,15 @@ z-index: 7;};
 .container_logiciels {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
   
 .container_langages {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
+
 .container_round {
   display: flex;
   justify-content: space-around;
@@ -62,74 +74,11 @@ z-index: 7;};
     flex-wrap: wrap;
     width: 450px;
 }
-.loader_second {
-display: flex;
-justify-content: center;
-width: 100%;
-height: 100px;
-
-  @include loader_about;
-}
 
 
-// //LOADER ABOUT
-// .loader_about {
-//   width: 16px;
-//   height: 16px;
-//   position: relative;
-//   position: relative;
-//   left: -20px;
-//   margin-top: 20px;
 
-//   border-radius: 50%;
-//   color: $white;
-//   background: currentColor;
-//   box-shadow: 32px 0 , -32px 0 ,  64px 0;
-// }
 
-// .loader_about::after {
-//   content: '';
-//   position: absolute;
-//   left: -32px;
-//   top: 0;
-//   width: 16px;
-//   height: 16px;
-//   border-radius: 10px;
-//   background:$color-orange
-// ;
-//   animation: move 3s linear infinite alternate;
-// }
 
-// @keyframes move {
-//   0% , 5%{
-//     left: -32px;
-//     width: 16px;
-//   }
-//   15% , 20%{
-//     left: -32px;
-//     width: 48px;
-//   }
-//   30% , 35%{
-//     left: 0px;
-//     width: 16px;
-//   }
-//   45% , 50%{
-//     left: 0px;
-//     width: 48px;
-//   }
-//   60% , 65%{
-//     left: 32px;
-//     width: 16px;
-//   }
-
-//   75% , 80% {
-//     left: 32px;
-//     width: 48px;
-//   }
-//   95%, 100% {
-//     left: 64px;
-//     width: 16px;
-//   } }
 
 
 @media (max-width: 1132px) {

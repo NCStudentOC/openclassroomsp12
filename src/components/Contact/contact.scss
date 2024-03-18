@@ -1,8 +1,10 @@
 @import '../../stlyes/mixins/loader_about.scss';
 @import '../../stlyes/mixins/loader_about.scss';
 @import '../../stlyes/utils/variables.scss';
+@import '../../stlyes/mixins/scrolling.scss';
 @import "bootstrap/dist/css/bootstrap.css";
 #point_contact{
+
   display: flex;
 z-index: 5;};
 
@@ -17,6 +19,7 @@ z-index: 5;};
   justify-content: center;
    padding-bottom: 70px;
  box-shadow: 0px 10px 15px rgba(89, 87, 87, 0.991); /* Ajoute une ombre */
+  padding-top: 20px;
 }
 
 .h1_title {
@@ -24,11 +27,14 @@ z-index: 5;};
   color: $white;
   position: relative;
   margin-top: 250px;
+   @include scrolling;
+  @include fade;
+  animation: scrolling 10s linear infinite, fade 10s linear infinite;
 }
 
 
 
-.loader_three {
+.loader_four {
 display: flex;
 justify-content: center;
 width: 100%;
@@ -37,37 +43,44 @@ height: 100px;
   @include loader_about;
 }
 
-.container_icone {
-  position:relative;
+.formulaire {
   display: flex;
-  flex-direction: row;
-}
-
-.loupe {
-  height: 40%;
-  width: 40%;
-  position: absolute;
-  opacity: 0.5 ;
-  top: 12px;
-    right: 45px;
+  flex-direction: column;
 
 }
-.loupe.hover-pointer {
-    position: absolute;
-}
 
-.loupe.hover-pointer::after {
-    content: "";
-    position: absolute;
-margin: 10px;
-}
-
-.loupe.hover-pointer:hover {
-   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:Lightseagreen;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  outline: none; // Supprime la bordure par défaut
+  border: 1px solid $color-blueM; // Ajoute une bordure bleue
 }
 
 
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;  
+  border: 0.5px solid #ccc; // Bordure fine
+  border-radius: 10px; // Coins arrondis
+  background: rgba(255, 255, 255, 0.5); // Rend le champ de saisie légèrement transparent
+}
 
+.button_submit{   
+  
+  background-color: $color-blueM;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.button_submit:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:blue;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
+}
+label {
+  color: $color-blueM; // Change la couleur du texte en bleu
+  font-weight:500; // Rend le texte en gras
+}
 
 
 @media (max-width: 500px) {
@@ -77,6 +90,9 @@ p {
   margin-left: 20px;
   margin-right: 20px;
 }
+.formulaire {
+  padding : 0 50px;
 
+}
 
 }

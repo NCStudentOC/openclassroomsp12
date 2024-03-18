@@ -34,7 +34,7 @@ export default function Project() {
         <div id="point_project">
             <div className='Project'>
                 <h1 className='h1_title'>PROJECT</h1>
-                <div className="loader_second">
+                <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
                 <Container >
