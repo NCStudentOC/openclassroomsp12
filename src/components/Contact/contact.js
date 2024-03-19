@@ -58,7 +58,7 @@ export default function Contact() {
                 <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
-                <form onSubmit={handleSubmit} className='formulaire' noValidate
+                <form onSubmit={handleSubmit} className='formulaire' noValidate name="contact" method="POST"
                     data-netlify="true">
                     <label>
                         Prénom :
