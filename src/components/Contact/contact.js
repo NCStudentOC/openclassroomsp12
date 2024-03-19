@@ -58,7 +58,7 @@ export default function Contact() {
                 <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
-                <form onSubmit={handleSubmit} className='formulaire' noValidate netlify-honeypot="bot-field"
+                <form onSubmit={handleSubmit} className='formulaire' noValidate
                     data-netlify="true">
                     <label>
                         Prénom :
