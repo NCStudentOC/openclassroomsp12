@@ -44,12 +44,15 @@ padding-top: 20px;
 }
 
 
-
+.weight{
+  font-weight: 600;
+}
 
 
 .image-wrapper{
   display: flex;
   justify-content: center; 
+  width: 100%;
 }
 
 .Photo_About{
@@ -68,7 +71,7 @@ padding-top: 20px;
   left: -25px;
   color:$white;
   text-align: center;
-  line-height: 2.2;
+  line-height: 3;
 }
 
 .loader_first {
@@ -83,10 +86,10 @@ height: 100px;
 
 @media (max-width: 500px) {
 
-p {
+.p_about  {
   font-size: 18px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .Photo_About{

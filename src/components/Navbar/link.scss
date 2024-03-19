@@ -10,13 +10,12 @@
     text-decoration: none;
     transition: width 0.3s ease, height 0.3s ease; 
     @include hover-effect;
-    
-     &.active {
-        transform: scale(1.8);
-        transition: transform 0.3s ease;
-        background-color: aliceblue;
-    }
 }
+.circleactive {
+       
+        background-color: rgb(19, 36, 51);
+    }
+
 .circle-link:hover {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:blue;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
 }
@@ -30,9 +29,7 @@
     line-height: 82px;
     width: 84px;
 
-      &.active {
-        color: black;
-      }
+    
 }
 
 

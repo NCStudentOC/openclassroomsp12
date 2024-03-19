@@ -14,7 +14,7 @@
   align-items: center; /* Ajouté */
   padding-left: 100px;
   padding-right: 100px;
-  padding-top: 230px;
+  padding-top: 300px;
   box-shadow: 0px 10px 15px rgba(89, 87, 87, 0.991); /* Ajoute une ombre */
 
   
@@ -68,16 +68,40 @@
 #accroche {
  padding-right: 20px;
  padding-left: 20px;
+ line-height: 2;
 }
 }
 
 @media (max-width:445px) {
 .centered {
+  font-size: 28px;
+  width: 350px;
+  margin-right: 30px;
+  margin-left: 30px;
+  line-height: 1.6;
+ 
+}
+.accroche {
+  width: 100%; 
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 200px;
+  
+
+  
+}}
+
+@media (max-width:376px) {
+.centered {
   font-size: 25px;
   width: 350px;
   margin-right: 30px;
   margin-left: 30px;
-  line-height: 1.5;
- 
-}}
+}
+ .accroche {
+  
+  padding-top: 180px;
+  
 
+  
+}}

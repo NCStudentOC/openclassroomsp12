@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from 'react';
 
 export default function Accroche() {
-    const text = "Passionné par la création d'expériences web immersives et interactives, je transforme les idées en réalités numériques avec élégance et efficacité.";
+    const text = "Passionné par la création d' expériences web immersives et interactives, je transforme les idées en réalités numériques avec élégance et efficacité.";
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
