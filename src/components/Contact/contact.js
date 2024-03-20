@@ -58,8 +58,9 @@ export default function Contact() {
                 <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
-                <form onSubmit={handleSubmit} className='formulaire' noValidate name="contact" method="POST"
-                    data-netlify="true">
+                <form onSubmit={handleSubmit} className='formulaire' noValidate name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact" />
+
                     <label>
                         Prénom :
                         <input type="text" name="fname" value={formState.fname} onChange={handleChange} />

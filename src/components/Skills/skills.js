@@ -26,7 +26,7 @@ export default function Skills() {
                     </div>
 
                     <div className="container_langages">
-                        <h2 className='h2_title'>LANGAGES</h2>
+                        <h2 className='h2_title'>LANGAGES / BIBLIOTHEQUES</h2>
                         <div className="container_round">
                             {langages.map((langage) => (
                                 <CircleCard key={langage.id} image={langage.image} titre={langage.titre} details={langage.details} />

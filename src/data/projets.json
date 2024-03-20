@@ -24,7 +24,7 @@
         "image": "imagesprojets/p5-printit.png",
         "imagedesktop" :"imagesprojets/DesktopPrintit.webp",
         "title": "Print it!",
-        "text":"Javascript",
+        "text":"HTML / CSS / Javascript",
         "link1":"https://github.com/NCStudentOC/OpenClassRoomsP5.git",
         "link2":"https://ncstudentoc.github.io/OpenClassRoomsP5/",
         "textflip":"Premiers pas sur le langage JavaScript, implémentation d'un carrousel interactif."
@@ -34,7 +34,7 @@
         "image": "imagesprojets/p6-sophiebluel.png",
         "imagedesktop" :"imagesprojets/DesktopSophieBluel.webp",
         "title": "Sophie Bluel Portfolio!",
-        "text":"Javascript",
+        "text":"HTML / CSS / Javascript",
         "link1":"https://github.com/NCStudentOC/OpenClassRoomsProjet6.git",
         "link2":"https://ncstudentoc.github.io/openclassroomsp6/",
         "textflip":"Création d'une page web dynamique avec JavaScript, manipulation du DOM et communication Api",
@@ -55,7 +55,7 @@
         "image": "imagesprojets/p9-ninacarducci.png",
          "imagedesktop" :"imagesprojets/DesktopNinaCarducci.webp",
         "title": "Nina Carducci",
-        "text":"SEO",
+        "text":"Optimisation SEO / Performance / Accessibilité",
         "link1":"https://github.com/NCStudentOC/OpenClassRoomsProjet9.git",
         "link2":"https://ncstudentoc.github.io/OpenClassRoomsProjet9/",
         "textflip":"Optimisation du référencement d'un site de photographe après audit par Lighthouse, amélioration la vitesse de chargement, la structure du code"

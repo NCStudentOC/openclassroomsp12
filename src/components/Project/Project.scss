@@ -18,7 +18,7 @@ z-index: 6;};
   justify-content: center;
    padding-bottom: 70px;
  box-shadow: 0px 10px 15px rgba(89, 87, 87, 0.991); /* Ajoute une ombre */
- padding-top: 20px;
+padding-top: 33px;
 }
 
 .h1_title {
@@ -33,36 +33,40 @@ z-index: 6;};
 
 
 
-
-
-.container_icone {
-  position:relative;
-  display: flex;
-  flex-direction: row;
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Adjust this value as needed */
 }
 
-.loupe {
-  height: 40%;
-  width: 40%;
-  position: absolute;
-  opacity: 0.5 ;
-  top: 12px;
-    right: 45px;
+// .container_icone {
+//   position:relative;
+//   display: flex;
+//   flex-direction: row;
+// }
 
-}
-.loupe.hover-pointer {
-    position: absolute;
-}
+// .loupe {
+//   height: 40%;
+//   width: 40%;
+//   position: absolute;
+//   opacity: 0.5 ;
+//   top: 12px;
+//     right: 45px;
 
-.loupe.hover-pointer::after {
-    content: "";
-    position: absolute;
-margin: 10px;
-}
+// }
+// .loupe.hover-pointer {
+//     position: absolute;
+// }
 
-.loupe.hover-pointer:hover {
-   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:Lightseagreen;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
-}
+// .loupe.hover-pointer::after {
+//     content: "";
+//     position: absolute;
+// margin: 10px;
+// }
+
+// .loupe.hover-pointer:hover {
+//    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:Lightseagreen;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
+// }
 
 
 

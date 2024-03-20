@@ -7,9 +7,10 @@ import Col from 'react-bootstrap/Col';
 
 import projets from '../../data/projets.json';
 import ReactCardFlip from 'react-card-flip';
-import logoloupe from '../../assets/loupe.svg'
-import ImageModal from '../modal/Modal'
-
+// import logoloupe from '../../assets/loupe.svg';
+import ImageModal from '../modal/Modal';
+import fleche from '../../assets/arrow-right-solid.svg';
+import flecheretour from '../../assets/arrow-left-solid.svg'
 export default function Project() {
     const [flips, setFlips] = useState(projets.map(() => false));
     const [showModal, setShowModal] = useState(false);
@@ -45,35 +46,43 @@ export default function Project() {
 
                                     <Card >
 
-                                        <Card.Img variant="top" src={item.image} />
+                                        <Card.Img className="survol" variant="top" src={item.image} onClick={() => openModal(item.imagedesktop)} />
 
 
                                         <Card.Body>
                                             <Card.Title>
-                                                {item.title}
-                                                <div className='container_icone'>
-                                                    <Button variant="link" className='plus' style={{ marginLeft: '10px' }} onClick={() => handleFlip(index)}>+</Button>
-                                                    <img className='loupe loupe hover-pointer' src={logoloupe} onClick={() => openModal(item.imagedesktop)} />
-
+                                                <div className='title-container'>
+                                                    {item.title}
+                                                    <Button variant="link" className='arrow_right' style={{ marginLeft: '10px' }} onClick={() => handleFlip(index)}>
+                                                        <img src={fleche} alt="Flip card" />
+                                                    </Button>
                                                 </div>
                                             </Card.Title>
                                             <Card.Text>
                                                 {item.text}
+                                            </Card.Text>
+
+                                        </Card.Body>
+                                    </Card>
+                                    <Card >
+                                        <Card.Body>
+                                            <Card.Title>
+                                                <div className='title-container'>
+                                                    {item.title}
+                                                    <Button variant="link" className='arrow_left' style={{ marginLeft: '10px' }} onClick={() => handleFlip(index)}>
+                                                        <img src={flecheretour} alt="Flip card" />
+                                                    </Button>
+                                                </div>
+                                            </Card.Title>
+                                            <Card.Text>
+                                                {item.textflip}
                                             </Card.Text>
                                             <div className='button'>
                                                 <Button className='button_circle' variant="primary" href={item.link1} target="_blank">GitHub</Button>
                                                 <Button className='button_circle' variant="secondary" href={item.link2} target="_blank">{item.buttonText || 'Site'}</Button>
 
                                             </div>
-                                        </Card.Body>
-                                    </Card>
-                                    <Card >
-                                        <Card.Body>
-                                            <Card.Title> {item.title}</Card.Title>
-                                            <Card.Text>
-                                                {item.textflip}
-                                            </Card.Text>
-                                            <Button variant="link" className='plus' style={{ marginLeft: '10px' }} onClick={() => handleFlip(index)}>-</Button>
+
                                         </Card.Body>
                                     </Card>
                                 </ReactCardFlip>
@@ -87,4 +96,5 @@ export default function Project() {
             </div>
         </div >
     );
+
 }

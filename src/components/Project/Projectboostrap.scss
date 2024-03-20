@@ -16,7 +16,7 @@
 .card{
   margin-bottom: 50px;
   box-shadow: 0px 10px 15px rgba(89, 87, 87, 0.991); /* Ajoute une ombre */
-  width: 30rem;
+  width: 35rem;
    background-color: azure;
    height: auto;
 
@@ -38,10 +38,10 @@
 }
 
  .h5 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
 }
 
-.plus {
+.arrow_right{
    font-size: 2rem;
     text-decoration: none;
     color :$color-orange;
@@ -51,8 +51,22 @@
     top: -10px;   
     font-weight: 700;
     z-index: 9999999;
+    width: 10%;
+    height: 10%;
 }
-
+ .arrow_left{
+   font-size: 2rem;
+    text-decoration: none;
+    color :$color-orange;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    top: -10px;   
+    font-weight: 700;
+    z-index: 9999999;
+    width: 10%;
+    height: 10%;
+}
 p{   text-align: center;
     color:$color-blueM;
     margin-top: 0;
@@ -64,7 +78,7 @@ p{   text-align: center;
       gap:10px;
     }
 
-.plus:hover, .button_circle:hover {
+.survol:hover,.arrow_right:hover,.arrow_left:hover, .button_circle:hover {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:Lightseagreen;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
 }
 
@@ -80,12 +94,24 @@ p{   text-align: center;
   width: 50%;
   
 }
-  @media (min-width: 1600px){
+  @media (max-width: 1600px){
   .card{
-    width: 25rem;
+    width: 35rem;
   }
   }
   
+    @media (max-width: 1399px){
+  .card{
+    width: 25rem;
+  }
+  
+.arrow_right{
+   
+    width: 15%;
+    height: 15%;
+}
+
+  }
 @media (max-width: 500px){
   .card{
     width: 20rem;

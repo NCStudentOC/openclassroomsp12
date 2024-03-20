@@ -50,6 +50,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // position: relative;
+  // top : -50px;
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:blue;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
  
 }

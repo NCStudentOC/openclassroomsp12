@@ -10,7 +10,7 @@ export default function Accroche() {
     useEffect(() => {
         const timer = setInterval(() => {
             setIndex((prevIndex) => prevIndex + 1);
-        }, 100); // ajustez la vitesse ici
+        }, 50); // ajustez la vitesse ici
         return () => clearInterval(timer);
     }, []);
 

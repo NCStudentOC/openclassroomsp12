@@ -13,8 +13,8 @@
     text-align: center; /* Centrer le texte horizontalement */
     white-space: wrap; /* Empêche le texte de passer à la ligne suivante */
     border-radius: 50%;
-    padding: 20px;
-    animation: rise 4s ease-in-out forwards;
+    padding-top: 33px;;
+    animation: rise 8s ease-in-out forwards;
 }
 
 .message.success {
@@ -27,6 +27,8 @@
 
 @keyframes rise {
     0% { bottom: 0; }
-    50% { bottom: 40%; }
+    50% { bottom: 30%; }
+    60% { bottom: 30%;}
+   
     100% { bottom: 100%; }
 }
