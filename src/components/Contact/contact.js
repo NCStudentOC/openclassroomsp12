@@ -28,26 +28,26 @@ export default function Contact() {
     };
 
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (formState.fname === '' || formState.lname === '' || formState.email === '') {
-            setMessage({ type: 'error', text: 'Le prénom, le nom et l\'e-mail sont obligatoires' });
-        } else if (formState.email !== '' && !validateEmail(formState.email)) {
-            setMessage({ type: 'error', text: 'Veuillez entrer une adresse e-mail valide' });
-        } else {
-            console.log(formState);
-            // Si le formulaire est soumis avec succès, définissez le message de succès
-            setMessage({ type: 'success', text: 'Le message a été envoyé avec succès !' });
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     if (formState.fname === '' || formState.lname === '' || formState.email === '') {
+    //         setMessage({ type: 'error', text: 'Le prénom, le nom et l\'e-mail sont obligatoires' });
+    //     } else if (formState.email !== '' && !validateEmail(formState.email)) {
+    //         setMessage({ type: 'error', text: 'Veuillez entrer une adresse e-mail valide' });
+    //     } else {
+    //         console.log(formState);
+    //         // Si le formulaire est soumis avec succès, définissez le message de succès
+    //         setMessage({ type: 'success', text: 'Le message a été envoyé avec succès !' });
 
-            setFormState({
-                fname: '',
-                lname: '',
-                email: '',
-                message: ''
-            });
-            setIsSubmitted(true);
-        }
-    };
+    //         setFormState({
+    //             fname: '',
+    //             lname: '',
+    //             email: '',
+    //             message: ''
+    //         });
+    //         setIsSubmitted(true);
+    //     }
+    // };
 
 
 
@@ -58,7 +58,7 @@ export default function Contact() {
                 <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
-                <form onSubmit={handleSubmit} className='formulaire' noValidate name="contact" method="POST" data-netlify="true">
+                <form className='formulaire' noValidate name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
 
                     <label>

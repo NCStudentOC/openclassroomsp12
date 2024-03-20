@@ -8,12 +8,12 @@
     transform: translate(-50%, 0);
     background-color: red;
     color: white;
-    width: 200px; /* Ajustez cette valeur */
-    height: 200px; /* Doit être la même que la largeur */
+    width: 190px; /* Ajustez cette valeur */
+    height: 190px; /* Doit être la même que la largeur */
     text-align: center; /* Centrer le texte horizontalement */
     white-space: wrap; /* Empêche le texte de passer à la ligne suivante */
     border-radius: 50%;
-    padding-top: 33px;;
+    margin : 5px;
     animation: rise 8s ease-in-out forwards;
 }
 
