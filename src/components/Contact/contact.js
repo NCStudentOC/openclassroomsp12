@@ -49,7 +49,6 @@ export default function Contact() {
                         <input
                             type="email"
                             name="email"
-                            value={formState.email}
                             onChange={handleChange}
                         />
                     </label>

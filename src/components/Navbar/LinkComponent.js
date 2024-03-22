@@ -1,25 +1,23 @@
 import React, { useCallback, useEffect } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-const LinkComponent = ({ to, children, color, active, setActiveLink }) => {
-    const extractedId = to.substring(1);
+const LinkComponent = ({ to, children, color, setActiveLink }) => {
+    // const extractedId = to.substring(1);
 
-    const handleClick = useCallback(() => {
-        console.log('Clic sur le lien:', to);
-        setActiveLink(extractedId);
-    }, [to, setActiveLink]);
+    // const handleClick = useCallback(() => {
+    //     setActiveLink(extractedId);
+    // }, [to, setActiveLink]);
 
-    const isActive = active === extractedId;
 
     return (
         <HashLink
             smooth
             to={to}
-            className={`circle-link adapt ${isActive ? 'active' : ''}`}
+            className="circle-link adapt"
             style={{
-                backgroundColor: isActive ? '#FFFFFF' : color
+                backgroundColor: color
             }}
-            onClick={handleClick}
+        // onClick={handleClick}
         >
             {children}
         </HashLink>

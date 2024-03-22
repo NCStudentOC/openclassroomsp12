@@ -11,6 +11,9 @@ import ReactCardFlip from 'react-card-flip';
 import ImageModal from '../modal/Modal';
 import fleche from '../../assets/arrow-right-solid.svg';
 import flecheretour from '../../assets/arrow-left-solid.svg'
+
+
+
 export default function Project() {
     const [flips, setFlips] = useState(projets.map(() => false));
     const [showModal, setShowModal] = useState(false);
@@ -92,7 +95,7 @@ export default function Project() {
                 </Container>
 
 
-                <ImageModal show={showModal} handleClose={closeModal} image={modalImage} />
+                <ImageModal show={showModal} handleClose={closeModal} image={modalImage} style={{ width: '1200%', height: '120%' }} />
             </div>
         </div >
     );

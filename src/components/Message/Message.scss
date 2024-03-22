@@ -8,10 +8,10 @@
     transform: translate(-50%, 0);
     background-color: red;
     color: white;
-    width: 200px; /* Ajustez cette valeur */
-    height: 200px; /* Doit être la même que la largeur */
-    text-align: center; /* Centrer le texte horizontalement */
-    white-space: wrap; /* Empêche le texte de passer à la ligne suivante */
+    width: 200px; 
+    height: 200px;
+    text-align: center; 
+    white-space: wrap;
     border-radius: 50%;
     margin : 15px;
     animation: rise 8s ease-in-out forwards;
