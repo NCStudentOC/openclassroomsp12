@@ -13,16 +13,25 @@ export default function Contact() {
         });
     };
 
-    const handleClick = (e) => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
         if (!formState.fname || !formState.lname || !formState.email || !formState.message) {
-            e.preventDefault();
             setMessage({ type: 'error', text: 'Veuillez remplir  les champs email, nom, prénom.' });
         } else if (!/\S+@\S+\.\S+/.test(formState.email)) {
-            e.preventDefault();
             setMessage({ type: 'error', text: 'Veuillez entrer un email valide.' });
         } else {
-            setIsSubmitted(true);
-            setMessage({ type: 'success', text: 'Votre message a été envoyé avec succès.' });
+            const formData = new FormData(e.target);
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString(),
+            })
+                .then(() => {
+                    setIsSubmitted(true);
+                    setMessage({ type: 'success', text: 'Votre message a été envoyé avec succès.' });
+                })
+                .catch((error) => alert(error));
         }
     };
 
@@ -33,7 +42,7 @@ export default function Contact() {
                 <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
-                <form className='formulaire' noValidate name="contact" method="POST" data-netlify="true">
+                <form className='formulaire' noValidate name="contact" method="POST" data-netlify="true" action="/" onSubmit={handleSubmit}>
                     <input type="hidden" name="form-name" value="contact" />
 
                     <label>
@@ -56,7 +65,7 @@ export default function Contact() {
                         Message:
                         <textarea name="message" onChange={handleChange} rows="5" cols="50" />
                     </label>
-                    <input type="submit" value="Envoyer" onClick={handleClick} className={`button_submit ${isSubmitted ? 'success' : ''}`} />
+                    <input type="submit" value="Envoyer" className={`button_submit ${isSubmitted ? 'success' : ''}`} />
                 </form>
                 {message.text && <Message message={message} clearMessage={() => setMessage({ type: '', text: '' })} />}
             </div>
