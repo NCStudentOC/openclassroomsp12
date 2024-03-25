@@ -3,6 +3,7 @@
 @import '../../stlyes/mixins/scrolling.scss';
 @import  '../../stlyes/utils/variables.scss';
 
+
 #point_skills{
   display: flex;
 z-index: 7;};
@@ -58,6 +59,7 @@ z-index: 7;};
   display: flex;
   flex-direction: column;
   overflow: hidden;
+   
 }
   
 .container_langages {
@@ -73,11 +75,12 @@ z-index: 7;};
   flex-direction: row;
     flex-wrap: wrap;
     width: 450px;
+    transition: transform 15s ease-in-out;
+   
 }
-
-
-
-
+.container_round.active {
+  transform: translateX(100%); /* Move from left to right */
+}
 
 
 

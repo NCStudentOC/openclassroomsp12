@@ -5,20 +5,23 @@
     width: 85px;
     height: 85px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 30px;
     box-shadow: 0px 10px 15px rgba(89, 87, 87, 0.991); /* Ajoute une ombre */
     text-decoration: none;
     transition: width 0.3s ease, height 0.3s ease; 
+     opacity:1;
     @include hover-effect;
 }
-.circleactive {
-       
-        background-color: rgb(19, 36, 51);
-    }
-
-.circle-link:hover {
+-link:hover {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:blue;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
 }
+
+.circle-link.active {
+   opacity: 0.5;
+    color: black; /* Changez la couleur du texte si nécessaire */
+    font-weight: 600;
+}
+
 .adapt{
     overflow: hidden;
     white-space: nowrap;

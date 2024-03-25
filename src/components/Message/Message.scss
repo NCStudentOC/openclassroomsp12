@@ -27,8 +27,7 @@
 
 @keyframes rise {
     0% { bottom: 0; }
-    50% { bottom: 30%; }
-    60% { bottom: 30%;}
-   
+    // 30% { bottom: 30%; }
+    80%{ bottom: 60%; }
     100% { bottom: 100%; }
 }

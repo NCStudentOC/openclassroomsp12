@@ -35,6 +35,7 @@ export default function Contact() {
         }
     };
 
+
     return (
         <div id="point_contact">
             <div className='Contact'>
@@ -42,7 +43,7 @@ export default function Contact() {
                 <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
-                <form className='formulaire' noValidate name="contact" method="POST" data-netlify="true" action="/" onSubmit={handleSubmit}>
+                <form className="formulaire" noValidate name="contact" method="POST" data-netlify="true" action="/" onSubmit={handleSubmit} >
                     <input type="hidden" name="form-name" value="contact" />
 
                     <label>
