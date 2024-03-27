@@ -1,7 +1,7 @@
 import Logo from "../../assets/logosvg.svg";
 import Navbar from '../Navbar/Navbar'
 import { HashLink as NavLink } from 'react-router-hash-link';
-import Fond from '../../assets/fond2.webp'
+import Fond from '../../assets/fond3.webp'
 
 
 export default function Header() {

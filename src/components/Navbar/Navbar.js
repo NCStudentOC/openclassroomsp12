@@ -7,7 +7,7 @@ const Navbar = () => {
     const [activeLink, setActiveLink] = useState(null);
 
     const handleSetActiveLink = (link) => {
-        console.log('Lien:', link)
+
         setActiveLink(link);
 
 
