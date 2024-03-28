@@ -9,6 +9,7 @@
   width: 100%;
   top:-270px;
   justify-content: space-between;
+    pointer-events: none;
 
     
 }
@@ -16,7 +17,8 @@
 .container_logo{
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 11;
+  pointer-events: all;
 }
 
 .container_logo:hover {
@@ -31,6 +33,7 @@
 img{
   // height: 100%;
   width: 100%;
+
 }
 @media (max-width:2600px) {
 .container_header {

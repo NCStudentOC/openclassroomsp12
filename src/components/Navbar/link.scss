@@ -10,11 +10,12 @@
     text-decoration: none;
     transition: width 0.3s ease, height 0.3s ease; 
      opacity:1;
+    //  pointer-events: all;
     @include hover-effect;
 }
--link:hover {
+.circle-link:hover {
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:blue;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
-}
+pointer-events: all;}
 
 .circle-link.active {
    opacity: 0.5;

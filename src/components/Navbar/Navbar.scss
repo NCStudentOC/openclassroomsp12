@@ -10,10 +10,13 @@
     position: fixed; /* Restez à fixed */
     z-index: 2; /* Augmentez la valeur z-index */
     top: 40px; /* Ajoutez pour rester en haut */
+    pointer-events: all;
+
+
 }
-a[href^="#"]:hover {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewport="0 0 30 30" style="fill:green;"><circle cx="15" cy="15" r="15"/></svg>') 16 16, auto;
-}
+// a[href^="#"]:hover {
+//   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewport="0 0 30 30" style="fill:green;"><circle cx="15" cy="15" r="15"/></svg>') 16 16, auto;
+// pointer-events: all;}
   
 @media (max-width:1236px) {
  .navbar_circle {
