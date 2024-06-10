@@ -35,9 +35,9 @@ export default function Project() {
     };
 
     return (
-        <div id="point_project">
+        <section id="point_project">
             <div className='Project'>
-                <h1 className='h1_title'>PROJECT</h1>
+                <h2 className='h2_title'>PROJECT</h2>
                 <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
@@ -67,6 +67,7 @@ export default function Project() {
 
                                         </Card.Body>
                                     </Card>
+
                                     <Card >
                                         <Card.Body>
                                             <Card.Title>
@@ -97,7 +98,7 @@ export default function Project() {
 
                 <ImageModal show={showModal} handleClose={closeModal} image={modalImage} style={{ width: '1200%', height: '120%' }} />
             </div>
-        </div >
+        </section >
     );
 
 }

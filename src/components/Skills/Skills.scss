@@ -23,9 +23,10 @@ z-index: 7;};
 }
 
 
-.h1_title {
+.h2_title {
   text-align: center;
   color: $white;
+  font-size: 36px;
   position: relative;
   margin-top: 250px;
    @include scrolling;
@@ -36,16 +37,17 @@ z-index: 7;};
 
 
 
-.h2_title {
+.h3_title {
   text-align:left;
   color: $white;
   position: relative;
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 400;
   font-style: italic;
   color: $color-oreangeP;
 }
+
 
 //Round logiciels et langages
 .round{ 
@@ -59,6 +61,7 @@ z-index: 7;};
   display: flex;
   flex-direction: column;
   overflow: hidden;
+ 
    
 }
   
@@ -66,6 +69,7 @@ z-index: 7;};
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  
 }
 
 .container_round {
@@ -100,22 +104,7 @@ z-index: 7;};
 
 }
 
-@media (max-width: 460px) {
-.container_round {
-  
-    width: 300px;
-}
- .circle-round {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  background-color: #fff;
 
-}
-
-}
 
 @media (max-width: 500px) {
 
@@ -138,5 +127,13 @@ p {
   width: 40px; /* Ajustez la taille du cercle selon vos besoins */
   height: 40px; /* Ajustez la taille du cercle selon vos besoins */
   line-height: 2.3;
+}
+
+.h3_title {
+  text-align:center;
+  
+}
+.container_langages, .container_logiciels{
+align-items: center;
 }
 }

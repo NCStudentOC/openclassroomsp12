@@ -21,8 +21,9 @@ z-index: 6;};
 padding-top: 33px;
 }
 
-.h1_title {
+.h2_title {
   text-align: center;
+ font-size: 36px;
   color: $white;
   position: relative;
   margin-top: 250px;
@@ -37,6 +38,7 @@ padding-top: 33px;
     display: flex;
     justify-content: space-between;
     width: 100%; /* Adjust this value as needed */
+    position: absolute;
 }
 
 

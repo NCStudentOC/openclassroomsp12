@@ -48,7 +48,8 @@
     display: flex;
     position: relative;
     justify-content: flex-end;
-    top: -10px;   
+    top: -10px;  
+    right:10px ; 
     font-weight: 700;
     z-index: 9999999;
     width: 10%;
@@ -61,11 +62,13 @@
     display: flex;
     position: relative;
     justify-content: flex-end;
-    top: -10px;   
+    top: -10px;  
+    right:10px ; 
     font-weight: 700;
     z-index: 9999999;
     width: 10%;
     height: 10%;
+
 }
 p{   text-align: center;
     color:$color-blueM;

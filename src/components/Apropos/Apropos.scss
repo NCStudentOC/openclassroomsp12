@@ -33,9 +33,10 @@ padding-top: 33px;
   margin-right: 100px;
 }
 
-.h1_title {
+.h2_title {
   text-align: center;
   color: white;
+  font-size: 36px;
   position: relative;
   margin-top: 350px;
     @include scrolling;
@@ -82,7 +83,23 @@ height: 100px;
 
   @include loader_about;
 }
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 180px; /* Ajustez cette valeur en fonction de vos besoins */
+    margin: 0 auto; /* Centrer le conteneur sur la page */
+}
 
+.logo-container a img {
+    width: 100%; /* Ajustez cette valeur en fonction de vos besoins */
+    height: auto;
+}
+.logo-container a {
+cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewport="0 0 30 30" style="fill:blue;"><circle cx="10" cy="10" r="10"/></svg>') 10 10, auto;
+ width: 80px;
+}
 
 @media (max-width: 500px) {
 

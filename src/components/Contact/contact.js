@@ -37,9 +37,9 @@ export default function Contact() {
 
 
     return (
-        <div id="point_contact">
+        <section id="point_contact">
             <div className='Contact'>
-                <h1 className='h1_title'>CONTACT</h1>
+                <h2 className='h2_title'>CONTACT</h2>
                 <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
@@ -51,7 +51,7 @@ export default function Contact() {
                         <input type="text" name="fname" onChange={handleChange} />
                     </label>
                     <label>
-                        Prénon :
+                        Prénom :
                         <input type="text" name="lname" onChange={handleChange} />
                     </label>
                     <label>
@@ -70,6 +70,6 @@ export default function Contact() {
                 </form>
                 {message.text && <Message message={message} clearMessage={() => setMessage({ type: '', text: '' })} />}
             </div>
-        </div >
+        </section >
     );
 }

@@ -15,12 +15,12 @@ export default function Accroche() {
     }, []);
 
     return (
-        <div id="point_accueil">
+        <section id="point_accueil">
             <div className='accroche'>
                 <div className='centered'>
                     {text.slice(0, index)}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

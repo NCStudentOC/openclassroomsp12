@@ -8,16 +8,16 @@ import CircleCard from './CircleCard';
 export default function Skills() {
 
     return (
-        <div id="point_skills">
+        <section id="point_skills">
             <div className='Skills'>
-                <h1 className='h1_title'>SKILLS</h1>
+                <h2 className='h2_title'>SKILLS</h2>
                 <div className="loader_first">
                     <span className=" loader_one "></span>
                 </div>
                 <div className="round">
 
                     <div className="container_logiciels">
-                        <h2 className='h2_title'>LOGICIELS</h2>
+                        <h3 className='h3_title'>LOGICIELS</h3>
                         <div className="container_round ">
                             {logiciels.map((logiciel) => (
                                 <CircleCard key={logiciel.id} image={logiciel.image} titre={logiciel.titre} details={logiciel.details} />
@@ -26,7 +26,7 @@ export default function Skills() {
                     </div>
 
                     <div className="container_langages">
-                        <h2 className='h2_title'>LANGAGES / BIBLIOTHEQUES</h2>
+                        <h3 className='h3_title'>LANGAGES / BIBLIOTHEQUES</h3>
                         <div className="container_round">
                             {langages.map((langage) => (
                                 <CircleCard key={langage.id} image={langage.image} titre={langage.titre} details={langage.details} />
@@ -35,6 +35,6 @@ export default function Skills() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

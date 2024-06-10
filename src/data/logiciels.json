@@ -22,7 +22,7 @@
         "id": 4,
         "image": "iconeslogiciels/logoswagger.svg",
         "titre": "SWAGGER",
-        "details":"SWAGGER, ensemble d'outils qui décrrit la structure des APIs. "
+        "details":"SWAGGER, ensemble d'outils qui décrit la structure des APIs. "
     },
     {
         "id": 5,
@@ -35,7 +35,12 @@
         "image": "iconeslogiciels/logofeedly.svg",
         "titre": "FEEDLY",
          "details":"FEEDLY, outil de veille et de curation"
+    },   {
+        "id": 7,
+        "image": "iconeslogiciels/logofigma.svg",
+        "titre": "FIGMA",
+         "details":"FIGMA, outil  pour la création, la collaboration et le prototypage. "
     }
-    
+        
     
 ]
