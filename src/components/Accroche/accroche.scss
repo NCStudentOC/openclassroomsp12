@@ -1,10 +1,12 @@
 #point_accueil{
   display: flex;
+  width: 100%;
  z-index: 9;
+
 }
 
 .accroche {
-  position: relative;
+  position:relative;
   background-color:#56808c;
  
   width: 100%; 
@@ -82,6 +84,7 @@
  
 }
 .accroche {
+  position:relative;
   width: 100%; 
   padding-left: 30px;
   padding-right: 30px;

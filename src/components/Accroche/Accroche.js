@@ -18,7 +18,7 @@ export default function Accroche() {
         <section id="point_accueil">
             <div className='accroche'>
                 <div className='centered'>
-                    {text.slice(0, index)}
+                {text.slice(0, index)}
                 </div>
             </div>
         </section>

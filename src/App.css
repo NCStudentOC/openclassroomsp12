@@ -8,13 +8,15 @@
   -ms-user-select: none;      /* IE/Edge */
   user-select: none;          /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
-  
+                                  width: 100vw;
+                                  overflow-x: hidden;
 }
 .App:active {
   cursor: grabbing;
 }
 .grab {
   cursor: grab;
+
 }
 
 .grabbing {

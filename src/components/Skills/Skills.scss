@@ -6,7 +6,8 @@
 
 #point_skills{
   display: flex;
-z-index: 7;};
+z-index: 7;
+width: 105%;}
 
 .Skills {
   position: relative;
@@ -109,7 +110,7 @@ z-index: 7;};
 @media (max-width: 500px) {
 
 p {
-  font-size: 18px;
+  // font-size: 18px;
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -131,6 +132,8 @@ p {
 
 .h3_title {
   text-align:center;
+  font-size: 20px;
+
   
 }
 .container_langages, .container_logiciels{

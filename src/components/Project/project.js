@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import projets from '../../data/projets.json';
+import projets from '../../data/projets.json'; 
 import ReactCardFlip from 'react-card-flip';
 // import logoloupe from '../../assets/loupe.svg';
 import ImageModal from '../modal/Modal';
